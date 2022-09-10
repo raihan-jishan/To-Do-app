@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sumit Saha, Learn with Sumit" />
+    <meta name="description" content="We love JavaScript" />
+    <title>DOM - Document Object Model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- main title container -->
+    <div class="titleContainer">
+        <h3 id="header" class="header">To-Do App</h3>
+    </div>
+    <!--  main section start  -->
+    <section class="container">
+        <!--  logo part  and using a tag for -->
+      <div class="logo">
+        <a href="https://www.youtube.com/c/LearnwithSumit">
+        <img src="https://yt3.ggpht.com/D9X91qRuvaOSs2L5ai9ydYsfuW8sUYgeMs7gsCuGkbElWYtRmraazV6U9a277kGJ_MHEOTjdtcI=s88-c-k-c0x00ffffff-no-rj" alt="Learn with Sumit" />
+        <h3 class="title">
+           LWS 
+            </h3>
+    </a>
+      </div>
+      <!-- main typing form and new task container  and add task button -->
+      <form class="new-task-container box">
+        <label for="new-task" class="Newtask">Add New Task</label>
+        <input type="text" id="new-task" />
+        <input type="submit" id="addTask" value="Add Task" />
+      </form>
+      <!--  todo list app  -->
+      <div class="todo-list box">
+        <h2>Incomplete Tasks</h2>
+        <ul id="items">
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+        </ul>
+      </div>
+      <!--/todo-list-->
+
+      <div class="complete-list box">
+        <h2>Completed Tasks</h2>
+        <ul>
+          <li class="item">Task Name <button class="delete">Delete</button></li>
+        </ul>
+      </div>
+      <!--/complete-list-->
+    </section>
+    <!--/container-->
+    <!--  script src file link  -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
