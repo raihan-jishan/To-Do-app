@@ -1,0 +1,205 @@
+/*  basic color convention  */
+:root {
+  --activeGreen: #2dbf64;
+  --fontPrimary: #002333;
+  --questionBG: #e4e8ee;
+  --successGreen: #00ff84; 
+  --bodyBackground: #f2f4f8; 
+  --smartYellow: #FFC916;
+  --smartBlue: #0070f3;
+  --purpule: #728FCE;
+}
+/*  logo lws title */
+.title{
+   display: inline;
+   color: #fff;
+   padding: 12px;
+   background: rgba(0, 0, 0, 0.308);
+   border-radius: 12px;
+   font-size: 1.3rem;
+}
+/*  basic css  */
+* {
+    box-sizing: border-box;
+  }
+  /* upper text */
+  .header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    margin: 10px;
+    background: #000;
+    padding: 12px;
+    color: #00ff84;
+    border-radius: 0.5rem;
+  }
+  /*  main container */
+  .container {
+    background: #000;
+    padding: 25px;
+    max-width: 760px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    font-family: sans-serif;
+  }
+  /*  by defaulte styling */
+  
+  h1,
+  h2 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    /* border-bottom: 1px solid #b1c9bb; */
+    border-bottom: 3px solid #2dbf64;
+    padding: 0 0 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  /*  logo part */
+  .logo {
+    width: 100%;
+    text-align: center;
+    background: #2dbf655e;
+    border-radius: 0.2rem;
+  }
+  /* logo part img  */
+  .logo img {
+    width: 80px;
+    border-radius: 4rem;
+  }
+  /*include hover effect */
+  .logo img:hover{
+     transform:  scale(1.1);
+     transition: 0.5s;
+  }
+  .logo:hover{
+    background: #2dbf64;
+    cursor: pointer;
+  }
+  /*  add task container  */
+  .new-task-container {
+    text-align: center;
+    font-weight: bold;
+  }
+  /*  task writing form */
+  #new-task{
+    padding: 6px;
+    background: transparent;  
+    border: 2px solid #728FCE;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  /*  add task button */
+  #addTask{
+    padding: 9px;
+    margin: 0.2px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: #2dbf65;;
+    cursor: pointer;
+    border-radius: 0.3rem;
+
+  }
+  /* #addTask:active{
+    background: #0070f3;
+  } */
+  #addTask:hover{
+    background: #21b95b;
+  }
+
+  /* task box  */
+  .box {
+    padding: 10px 15px;
+    /* border: 2px solid #b1c9bb; */
+    border-radius: 5px;
+    /* background:#03c74e9c; */
+    background: #000;
+    color: rgb(255, 255, 255);
+    margin: 15px 0;
+    border: 0.1px solid #00ff8460;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  }
+  .box:hover{
+    background: #cccccc02;
+    cursor: grabbing;
+    border-top: 1px solid #2dbf64;
+    transition: 0.1s;
+  }
+  /*  list of todo */
+  .todo-list {
+    float: left;
+    width: 46%;
+  }
+  /* complete list */
+  .complete-list {
+    float: right;
+    width: 46%;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 10px;
+    /* border-bottom: 1px dotted #ccc; */
+    border-bottom: 2px solid #0070f3;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  /*  pudate related css  */
+  .update {
+    float: right;
+    background-color: blue;
+    color: white;
+    border: 0px;
+    padding: 3px 5px;
+  }
+  /*  delete  button  */
+  .delete {
+    float: right;
+    background-color: red;
+    color: white;
+    border: 0px;
+   padding: 7px 7px;
+   background: #2dbf64;
+   font-weight: bold;
+   color: #000;
+   border-radius: 0.1rem;
+
+   
+  }
+  .delete:hover{
+  background: crimson;
+  color: rgb(0, 0, 0);
+  font-size: 1.1rem;
+  cursor: pointer;
+  }
+  /* responsibe design */
+  @media screen and (max-width:770px){
+      /* complete-list */
+  .complete-list{
+    width: 100%;
+    flex-direction: column ;
+  }
+  .new-task-container{
+   width: 100%;
+  }
+  .box{
+    width: 100%;
+  }
+
+
+  }
